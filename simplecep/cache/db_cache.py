@@ -1,11 +1,15 @@
-import collections
 from typing import Optional, Iterator
 
 from simplecep import CEPAddress
 from simplecep.models import CepCache
 
+try:
+    from collections.abc import MutableMapping
+except ImportError:
+    from collections import MutableMapping
 
-class CepDatabaseCache(collections.MutableMapping):
+
+class CepDatabaseCache(MutableMapping):
     """
     Dict-like class to read and store CEPs to database acting as CEP cache
     """
