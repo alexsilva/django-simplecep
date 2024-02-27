@@ -16,7 +16,7 @@ README = open(os.path.join(here, "README.md")).read()
 
 setup(
     name="django-simplecep",
-    version="0.1.0",
+    version="0.2.0",
     description="Validate brazilian zipcode (CEP) and auto-populate address fields using Correios API data",
     long_description=README,
     long_description_content_type="text/markdown",
